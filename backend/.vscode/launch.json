@@ -3,10 +3,10 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Attach to Spring Boot (WSL)",
-      "request": "attach",
-      "hostName": "localhost",
-      "port": 5005
+      "name": "Spring Boot Debug (Local)",
+      "request": "launch",
+      "mainClass": "ph2.Ph2App",
+      "projectName": "backend"
     }
   ]
 }

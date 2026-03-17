@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+
+  db:
+    image: postgres:16
+    container_name: pg
+    environment:
+      POSTGRES_DB: sample
+      POSTGRES_USER: nobu
+      POSTGRES_PASSWORD: n0buh1sa
+    ports:
+      - "15432:5432"
+
+  backend:
+    build: ./backend
+    container_name: spring
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/sample
+      SPRING_DATASOURCE_USERNAME: nobu
+      SPRING_DATASOURCE_PASSWORD: n0buh1sa
+    ports:
+      - "8080:8080"
+      - "5005:5005"
+
+  frontend:
+    build: ./frontend
+    container_name: vite
+    depends_on:
+      - backend
+    ports:
+      - "5173:5173"

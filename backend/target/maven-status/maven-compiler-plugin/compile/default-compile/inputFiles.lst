@@ -1,5 +1,8 @@
-/home/nobu/backend/src/main/java/ph2/api/auth/AuthController.java
-/home/nobu/backend/src/main/java/ph2/dto/LoginRequest.java
-/home/nobu/backend/src/main/java/ph2/Ph2App.java
-/home/nobu/backend/src/main/java/ph2/dto/LoginResponse.java
-/home/nobu/backend/src/main/java/ph2/api/HelloController.java
+/home/nobu/ph2/backend/src/main/java/ph2/Ph2App.java
+/home/nobu/ph2/backend/src/main/java/ph2/entity/User.java
+/home/nobu/ph2/backend/src/main/java/ph2/repository/UserRepository.java
+/home/nobu/ph2/backend/src/main/java/ph2/dto/LoginRequest.java
+/home/nobu/ph2/backend/src/main/java/ph2/api/auth/AuthController.java
+/home/nobu/ph2/backend/src/main/java/ph2/api/HelloController.java
+/home/nobu/ph2/backend/src/main/java/ph2/dto/LoginResponse.java
+/home/nobu/ph2/backend/src/main/java/ph2/service/AuthService.java

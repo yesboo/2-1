@@ -1,5 +1,8 @@
 ph2/api/auth/AuthController.class
 ph2/dto/LoginResponse.class
+ph2/repository/UserRepository.class
+ph2/api/HelloController.class
+ph2/service/AuthService.class
+ph2/entity/User.class
 ph2/dto/LoginRequest.class
 ph2/Ph2App.class
-ph2/api/HelloController.class
