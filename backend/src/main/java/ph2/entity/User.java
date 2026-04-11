@@ -11,6 +11,9 @@ public class User{
 	private Long id;
 	private String username;
 	private String password;
+	private Integer role;
+	private String name;
+	private String email;
 
 	public String getUsername(){
 		return username;
@@ -23,5 +26,23 @@ public class User{
 	}
 	public void setPassword(String  password){
 		this.password = password;
+	}
+	public void setName(String  name){
+		this.name = name;
+	}
+	public String getName(){
+		return name;
+	}
+	public void setRole(Integer role){
+		this.role = role;
+	}
+	public Integer getRole(){
+		return role;
+	}
+	public void setEmail(String email){
+		this.email = email;
+	}
+	public String getEmail(){
+		return email;
 	}
 }

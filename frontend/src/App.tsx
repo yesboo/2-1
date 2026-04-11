@@ -8,7 +8,7 @@ function App() {
 
   const login = async () => {
     debugger;
-    const res = await fetch('http://172.26.156.80:8080/api/hello', {
+    const res = await fetch('http://localhost:8080/api/auth/login', {
       method: "POST", 
       headers: { "Content-Type" : "application/json",},
       body: JSON.stringify({ username, password, }),

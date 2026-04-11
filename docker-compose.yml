@@ -18,7 +18,7 @@ services:
     depends_on:
       - db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/sample
+      SPRING_DATASOURCE_URL: jdbc:postgresql://192.168.0.200:15432/sample
       SPRING_DATASOURCE_USERNAME: nobu
       SPRING_DATASOURCE_PASSWORD: n0buh1sa
     ports:
