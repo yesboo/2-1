@@ -9,17 +9,17 @@ public class User{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String username;
+	private String acname;
 	private String password;
 	private Integer role;
 	private String name;
 	private String email;
 
-	public String getUsername(){
-		return username;
+	public String getAcname(){
+		return acname;
 	}
-	public void setUsername(String username){
-		this.username = username;
+	public void setAcname(String acname){
+		this.acname = acname;
 	}
 	public String getPassword(){
 		return password;

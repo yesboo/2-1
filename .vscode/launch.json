@@ -5,7 +5,7 @@
             "type": "java",
             "name": "Attach Spring(Docker)",
             "request": "attach",
-            "hostName": "localhost",
+            "hostName": "127.0.0.1",  // ← "localhost"から変更
             "port": 5005,
             "sourcePaths": ["${workspaceFolder}/backend/src/main/java"]
         }
