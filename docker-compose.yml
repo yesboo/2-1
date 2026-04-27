@@ -25,7 +25,23 @@ services:
       - "8080:8080"
       - "5005:5005"
 
+  backend-ee:
+    build: ./backend-ee
+    container_name: wildfly
+    depends_on:
+      - db
+    environment:
+      DB_HOST: 192.168.3.66
+      DB_PORT: 15432
+      DB_NAME: sample
+      DB_USER: nobu
+      DB_PASSWORD: n0buhisa
+    ports:
+      - "8081:8080" #Widlfly HTTP (Spring の8080と被らないように8081に変更)
+      - "9990:9990" #Wildfly 管理コンソール
+      - "5006:5005" #リモートデバッグ用(Spring の5005と被らないように 5006に変更)
   frontend:
+
     build: ./frontend
     container_name: vite
     depends_on:

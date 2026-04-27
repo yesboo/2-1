@@ -5,9 +5,17 @@
             "type": "java",
             "name": "Attach Spring(Docker)",
             "request": "attach",
-            "hostName": "127.0.0.1",  // ← "localhost"から変更
+            "hostName": "127.0.0.1",
             "port": 5005,
             "sourcePaths": ["${workspaceFolder}/backend/src/main/java"]
+        },
+        {
+            "type": "java",
+            "name": "Attach WildFly(Docker)",
+            "request": "attach",
+            "hostName": "127.0.0.1",
+            "port": 5006,
+            "sourcePaths": ["${workspaceFolder}/backend-ee/src/main/java"]
         }
     ]
 }
